@@ -4,13 +4,14 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 import Login from "./userRegrestation/Login";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Login />
+      <Outlet />
     </>
   );
 }
